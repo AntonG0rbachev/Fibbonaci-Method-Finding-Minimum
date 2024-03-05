@@ -60,4 +60,7 @@ f = lambda x: 2 * x ** 2 - 2 * x + 3 / 2
 L = [-2, 8]
 eps = 0.2
 l = 0.5
+x = numpy.arange(L[0] - 1, L[1] + 1, 0.01)
+pyplot.plot(x, f(x))
+pyplot.show()
 print(findingMinimumByFibonacciMethod(L, l, eps, f))
